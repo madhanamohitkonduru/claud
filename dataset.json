@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from a given S3 URI (e.g., 's3://my-bucket-name/path/to/object') and extract only the bucket name",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly extract bucket names from valid S3 URIs, handle bucket names with hyphens and numbers, and not match invalid URIs"
+  },
+  {
+    "task": "Create a JSON configuration object for an AWS Lambda function that specifies the function name, runtime (Python 3.11), timeout (60 seconds), memory (256 MB), and environment variables including AWS_REGION set to 'us-east-1'",
+    "format": "json",
+    "solution_criteria": "The JSON should be valid, include all required fields with correct data types, and follow AWS Lambda configuration naming conventions"
+  },
+  {
+    "task": "Write a Python function that takes an AWS IAM policy document (as a dictionary) and returns a list of all AWS service actions (e.g., 's3:GetObject', 'dynamodb:Query') granted in that policy",
+    "format": "python",
+    "solution_criteria": "The function should correctly extract Action values from Statement blocks, handle both string and list Action formats, and return a deduplicated list of actions"
+  }
+]
